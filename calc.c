@@ -44,7 +44,7 @@ int main()
        break;
        
     case 5:
-       printf("Result of the operation is %d\n", n1%n2); 
+       printf("Result of the operation is %d\n", (int)n1 % (int)n2); 
        break;
 
     case 6:
