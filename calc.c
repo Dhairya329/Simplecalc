@@ -5,17 +5,21 @@ int main()
     int n1; int n2; 
     int n; 
     label:
-
+    l:
  printf("\n-------------------------------\n");
  printf("Welcome to the calculator\n\n");
- printf("Choose one of the following operations:\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Modulus\n6. Power\n7. Exit\n" );
+ printf("Choose one of the following operations:\nPress 1 to Add\nPress 2 to Subtract\nPress 3 to Multiply\nPress 4 to Divide\nPress 5 to Modulus\nPress 6 to Power\nPress 7 to Exit\n" );
  scanf("%d",& n); 
  
- if(n>=7)
+ if (n==7)
  {
   return 0;  
  }
-
+ else if(n<1 || n>7)
+ {
+    printf("Invalid argument\n");
+    goto l;
+ }
 
  //taking the two numbers 
  printf("Enter the first number\n");
@@ -23,7 +27,6 @@ int main()
  printf("Enter the second number\n");
  scanf("%d", &n2); 
  
-
  
     switch(n)
     {
